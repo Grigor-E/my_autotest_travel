@@ -2,6 +2,8 @@ import pytest
 import allure
 from selenium.webdriver.chrome import webdriver
 from selenium.webdriver.chrome.options import Options
+
+from pages.booking_page import Booking_page
 from pages.contacts_page import Contacts_page
 from pages.main_page import Main_page
 
@@ -17,6 +19,9 @@ def test_booking_module(set_up):
 
     mp = Main_page(driver)
     mp.select_booking_module()
+
+    bp = Booking_page(driver)
+    bp.select_booking_engine()
 
     print("Finish test booking module")
     driver.quit()
