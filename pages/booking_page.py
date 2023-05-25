@@ -37,10 +37,8 @@ class Booking_page(Base):
             Logger.add_start_step(method="select_booking_engine")
             self.get_current_url() # вызов нашего url
             self.assert_word(self.get_main_word(), 'TL: BOOKING ENGINE')  # вызов метода сравнения текста на странице TL: Booking Engine
-            # self.scroll() # вызов метода scroll из Base
-            # time.sleep(3)
-            # self.get_screenshot() # вызов метода получения скриншота из Base
+            self.scroll() # вызов метода scroll из Base
+            time.sleep(3)
+            self.get_screenshot() # вызов метода получения скриншота из Base
             self.click_why_booking_module() # метод нажатия кнопки (выбора меню) 'Зачем отелю модуль бронирования?'
-            # time.sleep(3)
-            # self.get_screenshot()  # вызов метода получения скриншота из Base
             Logger.add_end_step(url=self.driver.current_url, method="select_booking_engine")
