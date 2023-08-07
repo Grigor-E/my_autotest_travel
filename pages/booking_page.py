@@ -13,8 +13,8 @@ class Booking_page(Base):
 
     # Locators
 
-    main_word = "[class='product-first-screen__name']" # локатор текста TL: Booking Engine
-    why_booking_module = "//*[@id='skrollr-body']/div[2]/section[14]/div[2]/div/dl/dt[2]/a" # локатор меню 'Зачем отелю модуль бронирования?'
+    main_word = "[class='product-first-screen__name']" # локатор текста "TL: Booking Engine"
+    why_booking_module = ".strip.strip_type-correct :nth-child(3) > a.tl-faq-accordion-title" # локатор меню "Зачем отелю модуль бронирования?"
 
     # Getters
 
@@ -22,7 +22,7 @@ class Booking_page(Base):
         return WebDriverWait(self.driver, 30).until(EC.visibility_of_element_located((By.CSS_SELECTOR, self.main_word)))
 
     def get_why_booking_module(self):
-        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.XPATH, self.why_booking_module)))
+        return WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable((By.CSS_SELECTOR, self.why_booking_module)))
 
     # Actions
 
@@ -36,9 +36,9 @@ class Booking_page(Base):
         with allure.step("select_booking_engine"):
             Logger.add_start_step(method="select_booking_engine")
             self.get_current_url() # вызов нашего url
-            self.assert_word(self.get_main_word(), 'TL: BOOKING ENGINE')  # вызов метода сравнения текста на странице TL: Booking Engine
+            self.assert_word(self.get_main_word(), 'TL: BOOKING ENGINE')  # вызов метода сравнения текста на странице "TL: Booking Engine"
             self.scroll() # вызов метода scroll из Base
             time.sleep(3)
             self.get_screenshot() # вызов метода получения скриншота из Base
-            self.click_why_booking_module() # метод нажатия кнопки (выбора меню) 'Зачем отелю модуль бронирования?'
+            self.click_why_booking_module() # метод нажатия кнопки (выбора меню) "Зачем отелю модуль бронирования?"
             Logger.add_end_step(url=self.driver.current_url, method="select_booking_engine")

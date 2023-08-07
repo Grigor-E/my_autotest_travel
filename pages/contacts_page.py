@@ -13,7 +13,7 @@ class Contacts_page(Base):
 
     # Locators
 
-    button_ask = "[class*='omni-email-widget']" # локатор кнопки Задать вопрос
+    button_ask = "[class*='omni-email-widget']" # локатор кнопки "Задать вопрос"
 
     # Getters
 
