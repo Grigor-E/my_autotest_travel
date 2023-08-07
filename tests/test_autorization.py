@@ -10,7 +10,7 @@ from pages.login_page import Login_page
 def test_good_autorization(set_group, set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test good autorization")
 
@@ -25,7 +25,7 @@ def test_good_autorization(set_group, set_up):
 def test_not_autorization(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test not autorization")
 

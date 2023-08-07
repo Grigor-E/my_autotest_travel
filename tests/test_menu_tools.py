@@ -13,7 +13,7 @@ from pages.main_page import Main_page
 def test_booking_module(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test booking module")
 
@@ -31,7 +31,7 @@ def test_booking_module(set_up):
 def test_control_system(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test control system")
 
@@ -46,7 +46,7 @@ def test_control_system(set_up):
 def test_channel_manager(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test channel manager")
 
@@ -61,7 +61,7 @@ def test_channel_manager(set_up):
 def test_accepting_online_payments(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test accepting online payments")
 
@@ -76,7 +76,7 @@ def test_accepting_online_payments(set_up):
 def test_work_with_reviews(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test work with reviews")
 
@@ -91,7 +91,7 @@ def test_work_with_reviews(set_up):
 def test_competitor_price_analysis(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test competitor price analysis")
 
@@ -106,7 +106,7 @@ def test_competitor_price_analysis(set_up):
 def test_integration_with_crm(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test integration with crm")
 
@@ -121,7 +121,7 @@ def test_integration_with_crm(set_up):
 def test_metasearch_engines(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test metasearch engines")
 
@@ -136,7 +136,7 @@ def test_metasearch_engines(set_up):
 def test_site_development(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test site development")
 
@@ -151,7 +151,7 @@ def test_site_development(set_up):
 def test_menu_prices(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test menu prices")
 
@@ -166,7 +166,7 @@ def test_menu_prices(set_up):
 def test_menu_content(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test menu content")
 
@@ -181,7 +181,7 @@ def test_menu_content(set_up):
 def test_knowledge_base(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test knowledge base")
 
@@ -196,7 +196,7 @@ def test_knowledge_base(set_up):
 def test_booking_dashboard(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test booking dashboard")
 
@@ -211,7 +211,7 @@ def test_booking_dashboard(set_up):
 def test_about_travelline(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test about travelline")
 
@@ -226,7 +226,7 @@ def test_about_travelline(set_up):
 def test_reviews(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test reviews")
 
@@ -241,7 +241,7 @@ def test_reviews(set_up):
 def test_events(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test events")
 
@@ -256,7 +256,7 @@ def test_events(set_up):
 def test_partners(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test partners")
 
@@ -271,7 +271,7 @@ def test_partners(set_up):
 def test_career(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test career")
 
@@ -286,7 +286,7 @@ def test_career(set_up):
 def test_contacts(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
-    driver = webdriver.WebDriver(chrome_options=options)
+    driver = webdriver.WebDriver(options=options)
 
     print("Start test contacts")
 
