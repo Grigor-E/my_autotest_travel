@@ -55,9 +55,9 @@ class Login_page(Base):
 
     # Methods
 
-    def autorization(self):
-        with allure.step("autorization"):
-            Logger.add_start_step(method="autorization")
+    def authorization(self):
+        with allure.step("authorization"):
+            Logger.add_start_step(method="authorization")
             self.driver.get(self.url) # метод октрытия страницы
             self.driver.maximize_window() # метод открытия во весь экран
             self.get_current_url() # вызов нашего url
@@ -65,11 +65,11 @@ class Login_page(Base):
             self.input_password("ВВЕСТИ КОРРЕКТНЫЙ ПАРОЛЬ") # метод заполнения поля пароля
             self.click_login_button() # метод нажатия кнопки Вход
             # self.assert_word(self.get_main_word(), '8 800 555-20-30') # вызов метода сравнения текста на странице после перехода
-            Logger.add_end_step(url=self.driver.current_url, method="autorization")
+            Logger.add_end_step(url=self.driver.current_url, method="authorization")
 
-    def not_autorization(self):
-        with allure.step("not_autorization"):
-            Logger.add_start_step(method="not_autorization")
+    def not_authorization(self):
+        with allure.step("not_authorization"):
+            Logger.add_start_step(method="not_authorization")
             self.driver.get(self.url) # метод октрытия страницы
             self.driver.maximize_window() # метод открытия во весь экран
             self.get_current_url() # вызов нашего url
@@ -80,5 +80,5 @@ class Login_page(Base):
             self.input_password("ВВЕСТИ ПАРОЛЬ") # метод заполнения поля пароля
             self.click_login_button() # метод нажатия кнопки Вход
             self.assert_word(self.get_error_message(), 'Неверный логин или пароль.') # вызов метода сравнения сообщения об ошибке
-            Logger.add_end_step(url=self.driver.current_url, method="not_autorization")
+            Logger.add_end_step(url=self.driver.current_url, method="not_authorization")
 

@@ -5,34 +5,34 @@ from selenium.webdriver.chrome.options import Options
 from pages.login_page import Login_page
 
 
-@allure.description("test good autorization")
+@allure.description("test good authorization")
 @pytest.mark.run(order=1)
-def test_good_autorization(set_group, set_up):
+def test_good_authorization(set_group, set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     driver = webdriver.WebDriver(options=options)
 
-    print("Start test good autorization")
+    print("Start test good authorization")
 
-    login = Login_page(driver)
-    login.autorization()
+    lp = Login_page(driver)
+    lp.authorization()
 
-    print("Finish test good autorization")
+    print("Finish test good authorization")
     driver.quit()
 
-@allure.description("test not autorization")
+@allure.description("test not authorization")
 @pytest.mark.run(order=2)
-def test_not_autorization(set_up):
+def test_not_authorization(set_up):
     options = Options()
     options.add_experimental_option('excludeSwitches', ['enable-logging'])
     driver = webdriver.WebDriver(options=options)
 
-    print("Start test not autorization")
+    print("Start test not authorization")
 
-    login = Login_page(driver)
-    login.not_autorization()
+    lp = Login_page(driver)
+    lp.not_authorization()
 
     print("Появилось сообщение об ошибке")
 
-    print("Finish test not autorization")
+    print("Finish test not authorization")
     driver.quit()
